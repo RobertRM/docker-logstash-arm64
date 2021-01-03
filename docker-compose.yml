@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   logstash:
-    build: 
+    build: .
     environment:
        - "ES_JAVA_OPTS=-Xmx512m -Xms512m"
        - monitoring.elasticsearch.hosts=http://elasticsearch:9200
